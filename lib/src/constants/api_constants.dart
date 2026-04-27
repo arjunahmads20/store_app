@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:store_app/src/features/auth/data/token_storage.dart';
 
 class ApiConstants {
-  static const String baseUrl = 'http://127.0.0.1:8000/api/v1';
+  static const String baseUrl = 'http://storexyz.pythonanywhere.com/api/v1';
   static const String products = '/product/products/';
   static const String orders = '/order/orders/';
   static const String deliveryTypes = '/order/delivery-types/';
@@ -19,7 +19,7 @@ class ApiConstants {
 // Network Provider
 final dioProvider = Provider<Dio>((ref) {
   final dio = Dio(BaseOptions(
-    baseUrl: 'http://127.0.0.1:8000/api/v1', // Use 10.0.2.2 for Android Emulator if needed
+    baseUrl: 'http://storexyz.pythonanywhere.com/api/v1', // Use 10.0.2.2 for Android Emulator if needed
     connectTimeout: const Duration(seconds: 120),
     receiveTimeout: const Duration(seconds: 120),
     headers: {
