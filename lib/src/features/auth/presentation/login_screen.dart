@@ -80,7 +80,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                        ConstrainedBox(
                          constraints: const BoxConstraints(maxHeight: 120, maxWidth: 200),
                          child: Image.asset(
-                           'images/sayursa_logo_transparent.png',
+                           'assets/images/sayursa_logo_transparent.png',
                            fit: BoxFit.contain,
                            errorBuilder: (context, error, stackTrace) {
                              // Fallback if image is missing
