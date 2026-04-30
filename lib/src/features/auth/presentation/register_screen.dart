@@ -120,7 +120,7 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
                         child: ConstrainedBox(
                           constraints: const BoxConstraints(maxHeight: 70, maxWidth: 160),
                           child: Image.asset(
-                            'images/sayursa_logo_transparent.png',
+                            'assets/images/sayursa_logo_transparent.png',
                             fit: BoxFit.contain,
                             errorBuilder: (context, error, stackTrace) {
                               return const Icon(Icons.image_not_supported, size: 60, color: Colors.white54);
