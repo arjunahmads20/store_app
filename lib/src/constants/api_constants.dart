@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:store_app/src/features/auth/data/token_storage.dart';
 
 class ApiConstants {
-  static const String baseUrl = 'http://storeappxyz.pythonanywhere.com/api/v1';
+  static const String baseUrl = 'http://storeappxyz.pythonanywhere.com/api/v1'; // Be carefull to distinct http with https
   static const String products = '/product/products/';
   static const String orders = '/order/orders/';
   static const String deliveryTypes = '/order/delivery-types/';
