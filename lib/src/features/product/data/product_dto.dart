@@ -25,7 +25,7 @@ class ProductDto {
   final int id;
   final int productId; // Reference to global product ID
   final String productName;
-  final String? productDescription,
+  final String? productDescription;
   final String productPrice; // String from API
   final String? productPicture;
   final int? storeId;
