@@ -25,6 +25,7 @@ class ProductDto {
   final int id;
   final int productId; // Reference to global product ID
   final String productName;
+  final String? productDescription,
   final String productPrice; // String from API
   final String? productPicture;
   final int? storeId;
@@ -42,6 +43,7 @@ class ProductDto {
     required this.id,
     required this.productId,
     required this.productName,
+    this.productDescription,
     required this.productPrice,
     this.productPicture,
     this.productTags,
@@ -61,6 +63,7 @@ class ProductDto {
       id: json['id'] as int,
       productId: json['product'] as int, // This is the Global Product ID
       productName: json['product_name'] as String,
+      productDescription: json['product_description'] as String?,
       productPrice: json['product_price']
           .toString(), // Handle both String and num
       productPicture: json['product_picture'] as String?,
@@ -85,7 +88,8 @@ class ProductDto {
     return ProductDto(
       id: 0, // ID not relevant for Global Product context in Order view
       productId: json['id'] as int,
-      productName: json['name'] as String,
+      productName: json['name'] as String,   
+      productDescription: json['product_description'] as String?,
       productPrice: json['sell_price'].toString(),
       productPicture: json['picture_url'] as String?,
 
@@ -161,6 +165,7 @@ class ProductDto {
     return Product(
       id: id.toString(), // ProductInStore ID
       name: productName,
+      description: productDescription,
       sellPrice: finalSellPrice,
       buyPrice: price, // Original/Base Price
       pictureUrl: productPicture,
