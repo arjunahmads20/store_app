@@ -93,7 +93,7 @@ class HomeScreen extends ConsumerWidget {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(20),
                         child: Image.network(
-                          "https://via.placeholder.com/800x400",
+                          "https://res.cloudinary.com/dziqqtbyq/image/upload/home_hero_image_1.png",
                           fit: BoxFit.cover,
                           errorBuilder: (context, error, stackTrace) {
                             return Container(
