@@ -48,6 +48,7 @@ dependencies:
   flutter_rating_bar: ^4.0.1
   image_picker: ^1.2.1
   webview_flutter: ^4.13.1
+  transparent_image: ^2.0.1
 
 dev_dependencies:
   flutter_test:
