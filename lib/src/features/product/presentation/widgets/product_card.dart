@@ -68,12 +68,15 @@ class ProductCard extends ConsumerWidget {
                         top: Radius.circular(16),
                       ),
                       child: product.pictureUrl != null
-                          ? Image.network(
-                              product.pictureUrl!,
+                            
+                          ? FadeInImage.memoryNetwork(
+                              placeholder: kTransparentImage,
+                              image: product.pictureUrl!,
                               fit: BoxFit.cover,
                               width: double.infinity,
                               height: double.infinity,
-                              errorBuilder: (context, error, stackTrace) {
+                            
+                              imageErrorBuilder: (context, error, stackTrace) {
                                 return Center(
                                   child: Icon(
                                     Icons.broken_image,
@@ -82,6 +85,7 @@ class ProductCard extends ConsumerWidget {
                                 );
                               },
                             )
+                      
                           : Center(
                               child: Icon(
                                 Icons.image,
