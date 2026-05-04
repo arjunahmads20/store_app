@@ -9,6 +9,8 @@ import 'package:store_app/src/features/cart/domain/cart.dart';
 import 'package:store_app/src/features/product/presentation/widgets/discount_badge.dart';
 import 'package:store_app/src/features/product/presentation/widgets/points_badge.dart';
 import 'package:store_app/src/core/utils/currency_formatter.dart';
+import 'package:transparent_image/transparent_image.dart';
+                     
 
 class ProductCard extends ConsumerWidget {
   final Product product;
