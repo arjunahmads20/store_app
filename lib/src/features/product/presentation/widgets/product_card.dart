@@ -77,7 +77,7 @@ class ProductCard extends ConsumerWidget {
                               fit: BoxFit.cover,
                               width: double.infinity,
                               height: double.infinity,
-                            
+                            fadeInDuration: const Duration(milliseconds: 1000), 
                               imageErrorBuilder: (context, error, stackTrace) {
                                 return Center(
                                   child: Icon(
